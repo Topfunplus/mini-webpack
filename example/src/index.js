@@ -1,4 +1,4 @@
-module.exports = function () {
+module.exports = () => {
   const App = require('./App.vue');
 
   new Vue({

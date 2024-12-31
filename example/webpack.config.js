@@ -12,6 +12,11 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: path.resolve(__dirname, '../lib/loaders/vue-loader.js')
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: path.resolve(__dirname, '../lib/loaders/babel-loader.js')
       }
     ]
   },
